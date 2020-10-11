@@ -1,1 +1,1 @@
-# leovilleri.github.io
+The game is [here.](/game)
