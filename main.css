@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 300, 400, 600, 800;
+  font-display: swap;
+  src: url(/Recursive.ttf) format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: url("assets/background.png");
+}
+
+html body {
+  font-family: 'Recursive', sans-serif;
+  color: #000000;
+  background-color: #00cbcc;
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+}
+
+html body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.gen .text p {
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 49px;
+}
