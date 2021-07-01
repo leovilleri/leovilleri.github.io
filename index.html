@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="/main.css">
   <script>
   function getOS() {
+    userAgent = window.navigator.userAgent
     platform = window.navigator.platform
     os = null;
     macos = ['Macintosh', 'MacIntel']
@@ -16,8 +17,10 @@
       location.replace('/guides/ios.html');
     } else if (windows.indexOf(platform) !== -1) {
       location.replace('/guides/windows.html');
-    } else {
+    } else if (/Android/.test(userAgent)) {
       location.replace('/android-if.html');
+    } else {
+      location.replace('/oof.html')
     }
   }
   window.onload = getOS;
