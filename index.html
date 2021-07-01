@@ -3,17 +3,26 @@
 <head>
   <title>Chat Setup</title>
   <link rel="stylesheet" href="/main.css">
+  <script>
+  function getOS() {
+    platform = window.navigator.platform
+    os = null;
+    macos = ['Macintosh', 'MacIntel']
+    windows = ['Win32', 'Win64', 'Windows', 'WinCE']
+    ios = ['iPhone', 'iPad', 'iPod', 'iPod touch']
+    if (macos.indexOf(platform) !== -1) {
+      location.replace('/guides/macos.html');
+    } else if (ios.indexOf(platform) !== -1) {
+      location.replace('/guides/ios.html');
+    } else if (windows.indexOf(platform) !== -1) {
+      location.replace('/guides/windows.html');
+    } else {
+      location.replace('/android-if.html');
+    }
+  }
+  window.onload = getOS;
+  </script>
 </head>
 <body>
-  <p><b>You cannot join with Chromebooks.</b></p>
-  <br>
-  <br>
-  <p><i>Please choose a device to install the app for the chat, then answer the questions.</i><br/>
-     <br/>
-  </p>
-  <p></p>
-  <p>Does your device have an Apple logo on it?</p>
-  <a href="/questions/apple-logo.html">Yes</a>
-  <a href="/questions/not-apple.html">No</a>
 </body>
 </html>
