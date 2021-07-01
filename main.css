@@ -13,25 +13,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: url("assets/background.png");
+  background-color: #00cbcc;
 }
 
 html body {
   font-family: 'Recursive', sans-serif;
   color: #000000;
-  background-color: #00cbcc;
   text-align: center;
   font-size: 25px;
   font-weight: normal;
-}
-
-html body {
-  height: 100vh;
-  width: 100vw;
-}
-
-.gen .text p {
-  padding-bottom: 30px;
 }
 
 h1 {
