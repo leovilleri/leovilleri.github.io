@@ -18,10 +18,14 @@ html, body {
 
 html body {
   font-family: 'Quicksand', sans-serif;
-  color: ##0125ff;
+  color: #0125ff;
   text-align: center;
   font-size: 25px;
   font-weight: normal;
+}
+
+li {
+  text-align: center;
 }
 
 h1 {
