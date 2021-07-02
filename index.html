@@ -3,8 +3,29 @@
 <head>
   <title>Chat Setup</title>
   <link rel="stylesheet" href="/main.css">
+  <script>
+  function getOS() {
+    userAgent = window.navigator.userAgent
+    platform = window.navigator.platform
+    os = null;
+    macos = ['Macintosh', 'MacIntel']
+    windows = ['Win32', 'Win64', 'Windows', 'WinCE']
+    ios = ['iPhone', 'iPad', 'iPod', 'iPod touch']
+    if (macos.indexOf(platform) !== -1) {
+      location.replace('/guides/macos.html');
+    } else if (ios.indexOf(platform) !== -1) {
+      location.replace('/guides/ios.html');
+    } else if (windows.indexOf(platform) !== -1) {
+      location.replace('/guides/windows.html');
+    } else if (/Android/.test(userAgent)) {
+      location.replace('/guides/android.html');
+    } else {
+      location.replace('/oof.html')
+    }
+  }
+  window.onload = getOS;
+  </script>
 </head>
 <body>
-  <h1>Please come back tomorrow.</h1>
 </body>
 </html>
